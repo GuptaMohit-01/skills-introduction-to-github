@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Projects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+        
+        h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .subtitle {
+            font-size: 20px;
+            opacity: 0.9;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+        }
+        
+        .project-icon {
+            font-size: 64px;
+            margin-bottom: 20px;
+        }
+        
+        .project-card h2 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+        
+        .project-card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .technologies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .tech-tag {
+            background: #f0f0f0;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 12px;
+            color: #555;
+        }
+        
+        .view-project {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #667eea;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .view-project:hover {
+            background: #5568d3;
+        }
+        
+        .info-section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .info-section h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .info-section p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        
+        .info-section ul {
+            list-style-position: inside;
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 Web Development Projects</h1>
+            <p class="subtitle">Three practical coding examples demonstrating modern web development</p>
+        </header>
+        
+        <div class="projects-grid">
+            <a href="todo-app/index.html" class="project-card">
+                <div class="project-icon">✅</div>
+                <h2>To-Do List Application</h2>
+                <p>A feature-rich task management app with local storage persistence, allowing users to add, complete, and delete tasks.</p>
+                <div class="technologies">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">LocalStorage</span>
+                </div>
+                <span class="view-project">View Project →</span>
+            </a>
+            
+            <a href="oauth-auth/index.html" class="project-card">
+                <div class="project-icon">🔐</div>
+                <h2>OAuth Authentication</h2>
+                <p>Implementation demonstrating OAuth 2.0 authentication flow with GitHub and Google, including security best practices.</p>
+                <div class="technologies">
+                    <span class="tech-tag">OAuth 2.0</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Authentication</span>
+                    <span class="tech-tag">Security</span>
+                </div>
+                <span class="view-project">View Project →</span>
+            </a>
+            
+            <a href="weather-app/index.html" class="project-card">
+                <div class="project-icon">🌤️</div>
+                <h2>Weather Forecast API</h2>
+                <p>Real-time weather information using external APIs, featuring geocoding and comprehensive weather data display.</p>
+                <div class="technologies">
+                    <span class="tech-tag">REST API</span>
+                    <span class="tech-tag">Async/Await</span>
+                    <span class="tech-tag">Fetch API</span>
+                    <span class="tech-tag">JSON</span>
+                </div>
+                <span class="view-project">View Project →</span>
+            </a>
+        </div>
+        
+        <div class="info-section">
+            <h2>📚 About These Projects</h2>
+            <p>These three projects demonstrate essential web development concepts and are great examples of tasks that can be accomplished with modern web technologies:</p>
+            <ul>
+                <li><strong>To-Do List:</strong> Shows fundamental CRUD operations, DOM manipulation, and client-side data persistence</li>
+                <li><strong>OAuth Authentication:</strong> Demonstrates secure user authentication using industry-standard OAuth 2.0 protocol</li>
+                <li><strong>Weather Forecast:</strong> Illustrates API integration, asynchronous programming, and error handling</li>
+            </ul>
+            <p style="margin-top: 20px;">Each project is self-contained and can be run directly in a web browser. They serve as practical examples for learning web development or as templates for building more complex applications.</p>
+        </div>
+        
+        <footer>
+            <p>&copy; 2024 Web Development Projects | Built for educational purposes</p>
+        </footer>
+    </div>
+</body>
+</html>

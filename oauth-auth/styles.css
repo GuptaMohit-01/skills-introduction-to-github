@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.auth-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.subtitle {
+    color: #666;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section.hidden {
+    display: none;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.oauth-btn {
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s;
+}
+
+.oauth-btn .icon {
+    font-size: 20px;
+}
+
+.oauth-btn.github {
+    background: #24292e;
+    color: white;
+}
+
+.oauth-btn.github:hover {
+    background: #1a1f23;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(36, 41, 46, 0.3);
+}
+
+.oauth-btn.google {
+    background: #4285f4;
+    color: white;
+}
+
+.oauth-btn.google:hover {
+    background: #357ae8;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(66, 133, 244, 0.3);
+}
+
+.oauth-btn.demo {
+    background: #6c5ce7;
+    color: white;
+}
+
+.oauth-btn.demo:hover {
+    background: #5f4dd3;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(108, 92, 231, 0.3);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.user-info h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.user-info p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.provider {
+    color: #999;
+    font-size: 12px;
+}
+
+.logout-btn {
+    width: 100%;
+    padding: 12px;
+    background: #ff4757;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.logout-btn:hover {
+    background: #e84118;
+    transform: translateY(-2px);
+}
+
+.info-section {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.info-section h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.info-section h4 {
+    color: #555;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.info-section p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.info-section ol {
+    margin-left: 20px;
+    color: #666;
+    line-height: 1.8;
+}
+
+.note {
+    background: #fff3cd;
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 4px solid #ffc107;
+    margin-top: 15px;
+    font-size: 14px;
+}
