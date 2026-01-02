@@ -13,6 +13,35 @@ _Get started using GitHub in less than an hour._
 
 </header>
 
+---
+
+## 🚀 Three Complete Projects
+
+This repository now contains three fully-functional projects demonstrating modern web development:
+
+### 1. 📝 Todo List Application (React + Node.js + MongoDB)
+A full-stack web application with CRUD operations, responsive design, and RESTful API.
+
+**Location:** [`todo-app/`](./todo-app)  
+**Technologies:** React, Node.js, Express, MongoDB, Mongoose  
+[📖 View Documentation](./todo-app/README.md)
+
+### 2. 🌤️ Weather Data Scraper (Python)
+A Python script that fetches weather data from a public API and saves it to CSV files.
+
+**Location:** [`weather-scraper/`](./weather-scraper)  
+**Technologies:** Python, Requests library, Open-Meteo API  
+[📖 View Documentation](./weather-scraper/README.md)
+
+### 3. 📰 Static Blog (Jekyll)
+A beautiful, responsive static blog with clean design and modern styling.
+
+**Location:** [`jekyll-blog/`](./jekyll-blog)  
+**Technologies:** Jekyll, Markdown, Liquid, CSS3  
+[📖 View Documentation](./jekyll-blog/README.md)
+
+---
+
 <!--
   <<< Author notes: Course start >>>
   Include start button, a note about Actions minutes,
