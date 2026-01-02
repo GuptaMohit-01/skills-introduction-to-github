@@ -16,6 +16,16 @@ A full-stack todo list application built with React, Node.js, Express, and Mongo
 - MongoDB (local installation or MongoDB Atlas account)
 - npm or yarn
 
+## Security Note
+
+⚠️ **Important**: This is a basic demo application for learning purposes. For production use, you should add:
+- Rate limiting on API endpoints
+- Authentication and authorization
+- Input validation and sanitization
+- HTTPS/TLS encryption
+- Environment-specific configurations
+- Proper error handling and logging
+
 ## Installation
 
 ### Backend Setup
