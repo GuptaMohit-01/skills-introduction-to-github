@@ -2,9 +2,15 @@
 
 // Check for stored session on page load
 document.addEventListener('DOMContentLoaded', () => {
-    const user = JSON.parse(localStorage.getItem('oauthUser'));
-    if (user) {
-        showProfile(user);
+    const userData = localStorage.getItem('oauthUser');
+    if (userData) {
+        try {
+            const user = JSON.parse(userData);
+            showProfile(user);
+        } catch (error) {
+            console.error('Failed to parse stored user data:', error);
+            localStorage.removeItem('oauthUser');
+        }
     }
     
     // Check if we're returning from OAuth callback

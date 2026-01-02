@@ -1,18 +1,5 @@
 // Weather Forecast Application
 
-// Weather icon mapping
-const weatherIcons = {
-    'clear': '☀️',
-    'clouds': '☁️',
-    'rain': '🌧️',
-    'drizzle': '🌦️',
-    'thunderstorm': '⛈️',
-    'snow': '❄️',
-    'mist': '🌫️',
-    'fog': '🌫️',
-    'haze': '🌫️'
-};
-
 // Load weather on page load
 document.addEventListener('DOMContentLoaded', () => {
     const cityInput = document.getElementById('cityInput');
