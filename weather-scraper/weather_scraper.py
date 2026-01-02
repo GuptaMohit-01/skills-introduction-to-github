@@ -84,8 +84,8 @@ def save_to_csv(weather_data, filename="weather_data.csv"):
             "wind_speed_kmh": current["windspeed"],
             "wind_direction_degrees": current["winddirection"],
             "weather_code": current["weathercode"],
-            "humidity_percent": "N/A",
-            "precipitation_mm": "N/A",
+            "humidity_percent": "",
+            "precipitation_mm": "",
             "data_type": "current"
         })
         
@@ -98,8 +98,8 @@ def save_to_csv(weather_data, filename="weather_data.csv"):
                 "longitude": weather_data["longitude"],
                 "temperature_celsius": hourly["temperature_2m"][i],
                 "wind_speed_kmh": hourly["wind_speed_10m"][i],
-                "wind_direction_degrees": "N/A",
-                "weather_code": "N/A",
+                "wind_direction_degrees": "",
+                "weather_code": "",
                 "humidity_percent": hourly["relative_humidity_2m"][i],
                 "precipitation_mm": hourly["precipitation"][i],
                 "data_type": "hourly_forecast"
