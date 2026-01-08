@@ -35,3 +35,45 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Node.js #
+###########
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+.npm
+
+# Environment variables #
+#########################
+.env
+
+# Python #
+##########
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+.pytest_cache/
+
+# Weather scraper output #
+##########################
+weather-scraper/*.csv
+
+# Jekyll #
+##########
+jekyll-blog/_site/
+jekyll-blog/.sass-cache/
+jekyll-blog/.jekyll-cache/
+jekyll-blog/.jekyll-metadata
+jekyll-blog/Gemfile.lock
+
+# React build #
+###############
+todo-app/frontend/build/
